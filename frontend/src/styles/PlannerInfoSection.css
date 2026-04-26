@@ -1,0 +1,146 @@
+/* PLANNER INFO SECTION STYLES */
+
+.planner-info-section {
+  padding: 60px 0 100px 0;
+  background: #f8fafc;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+}
+
+.cards-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.info-message-card {
+  background: white;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.info-message-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  border-color: #f9731633;
+}
+
+.icon-wrapper {
+  background: #fff7ed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.info-message-card h3 {
+  color: #0f2b5b;
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.info-message-card p {
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* SUPPORT SIDEBAR */
+.support-sidebar {
+  display: sticky;
+  top: 100px;
+}
+
+.support-card {
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(249, 115, 22, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.support-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.support-header h3 {
+  color: #0f2b5b;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.support-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.support-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #475569;
+}
+
+.support-item a {
+  color: #0f2b5b;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+
+.support-item a:hover {
+  color: #f97316;
+}
+
+.chat-btn {
+  background: #0f2b5b;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.chat-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1024px) {
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  .support-sidebar {
+    position: static;
+  }
+}
