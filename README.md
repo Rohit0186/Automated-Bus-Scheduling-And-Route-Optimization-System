@@ -95,21 +95,19 @@ This ensures automation, transparency, and efficiency in the system.
 ---
 
 ## 📂 Project Structure
+
+```bash
 JanSafar/
-│
-├── frontend/ # React Application
-├── backend/ # Spring Boot Backend
-├── database/ # SQL Scripts
-├── README.md
-
-
----
+├── frontend/        # React Application
+├── backend/         # Spring Boot Backend
+├── database/        # SQL Scripts
+└── README.md
+```
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the Repository
 
-```bash
 git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
 cd REPO_NAME
 2️⃣ Backend Setup
@@ -121,29 +119,6 @@ cd backend
 cd frontend
 npm install
 npm start
-## 📸 Screenshots
-
-### 📊 Admin Dashboard
-![Dashboard](screenshots/dashboard.png)<img width="1917" height="959" alt="Screenshot 2026-04-26 225334" src="https://github.com/user-attachments/assets/3136da14-e42e-4957-94e7-e5e725f01888" />
-
-
----
-### 🪑Fleet Inventory
-![Fleet Inventory](screenshots/seat-booking.png)<img width="1905" height="952" alt="Screenshot 2026-04-26 225448" src="https://github.com/user-attachments/assets/cf02907e-1bf6-4ecf-b880-0adbc36b6296" />
-
-
----
-
-
-### 📍 Live Tracking
-![Tracking](screenshots/tracking.png)<img width="1909" height="956" alt="Screenshot 2026-04-26 225730" src="https://github.com/user-attachments/assets/e2076dd2-6774-49ac-8a35-5b7a508a9415" />
-
-
----
-
-### User Dashboard
-![User](screenshots/ticket.png)<img width="1919" height="962" alt="Screenshot 2026-04-26 225904" src="https://github.com/user-attachments/assets/ed46c376-5f90-4926-99b9-1a0b37cdbfb6" />
-
 
 🎯 Project Objective
 
