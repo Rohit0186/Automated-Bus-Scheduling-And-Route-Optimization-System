@@ -1,77 +1,115 @@
-🚍 JanSafar
-Automated Bus Scheduling and Route Optimization System
+# 🚍 JanSafar  
+## Automated Bus Scheduling and Route Optimization System
 
-JanSafar is a smart and modern transport management system designed to improve public bus services by integrating real-time tracking, digital ticketing, route optimization, and automated scheduling. The system provides a seamless experience for both passengers and administrators, making transportation more efficient, transparent, and user-friendly.
+JanSafar is a smart and modern transport management system designed to improve public bus services by integrating real-time tracking, digital ticketing, route optimization, and automated scheduling.  
 
-📌 Project Overview
+---
 
-Traditional bus transport systems often suffer from issues like inefficient scheduling, lack of real-time updates, manual ticketing, and poor passenger communication.
+## 📌 Project Overview
+
+Traditional bus transport systems often suffer from:
+
+- Inefficient scheduling  
+- Lack of real-time updates  
+- Manual ticketing  
+- Poor passenger communication  
 
 JanSafar solves these problems by providing a centralized digital platform where users can:
 
-Search and book bus journeys
-Track buses in real-time
-Apply for monthly passes
-Raise complaints and get support
-Access digital tickets with QR verification
+- Search and book bus journeys  
+- Track buses in real-time  
+- Apply for monthly passes  
+- Raise complaints and get support  
+- Access digital tickets with QR verification  
 
 At the same time, administrators can efficiently manage routes, buses, schedules, and passenger requests.
 
-🚀 Key Features
-👤 Passenger Features
-🔍 Smart Route Search (Source → Destination)
-🎫 Online Seat Booking System
-💳 Secure Payment Integration (UPI / Card)
-📍 Live Bus Tracking on Map
-📲 Digital Ticket with QR Code
-🧾 Ticket History & Dashboard
-🎟️ Monthly Pass Application System
-📞 Contact Support & Grievance System
-🚨 Emergency SOS Feature
-🛠️ Admin Features
-🚌 Bus & Route Management
-📊 Dashboard Analytics
-🧾 Pass Approval / Rejection System
-📍 Fleet Tracking Monitoring
-🧑‍✈️ Driver & Maintenance Management
-⛽ Fuel & Operational Tracking
-🧠 System Workflow
+---
+
+## 🚀 Key Features
+
+### 👤 Passenger Features
+
+- 🔍 Smart Route Search (Source → Destination)  
+- 🎫 Online Seat Booking System  
+- 💳 Secure Payment Integration (UPI / Card)  
+- 📍 Live Bus Tracking on Map  
+- 📲 Digital Ticket with QR Code  
+- 🧾 Ticket History & Dashboard  
+- 🎟️ Monthly Pass Application System  
+- 📞 Contact Support & Grievance System  
+- 🚨 Emergency SOS Feature  
+
+---
+
+### 🛠️ Admin Features
+
+- 🚌 Bus & Route Management  
+- 📊 Dashboard Analytics  
+- 🧾 Pass Approval / Rejection System  
+- 📍 Fleet Tracking Monitoring  
+- 🧑‍✈️ Driver & Maintenance Management  
+- ⛽ Fuel & Operational Tracking  
+
+---
+
+## 🧠 System Workflow
 
 The system follows a structured workflow:
 
-User searches for available routes
-Selects seats from an interactive seat layout
-Proceeds to secure payment
-Receives a digital ticket with QR code
-QR is scanned during boarding for verification
-User can track bus in real-time
-Monthly pass requests are sent to admin for approval
-Admin reviews and approves/rejects requests
+1. User searches for available routes  
+2. Selects seats from an interactive seat layout  
+3. Proceeds to secure payment  
+4. Receives a digital ticket with QR code  
+5. QR is scanned during boarding for verification  
+6. User can track the bus in real-time  
+7. Monthly pass requests are sent to admin for approval  
+8. Admin reviews and approves/rejects requests  
 
 This ensures automation, transparency, and efficiency in the system.
 
-🏗️ Tech Stack
-Frontend:
-React.js
-Tailwind CSS
-Framer Motion (Animations)
-Backend:
-Java (Spring Boot)
-Database:
-MySQL
-Other Tools:
-REST APIs
-Git & GitHub
-Postman
-📂 Project Structure
+---
+
+## 🏗️ Tech Stack
+
+### Frontend
+
+- React.js  
+- Tailwind CSS  
+- Framer Motion  
+
+### Backend
+
+- Java (Spring Boot)  
+
+### Database
+
+- MySQL  
+
+### Tools
+
+- REST APIs  
+- Git & GitHub  
+- Postman  
+
+---
+
+## 📂 Project Structure
 JanSafar/
 │
-├── frontend/        # React Application
-├── backend/         # Spring Boot Backend
-├── database/        # SQL Scripts
+├── frontend/ # React Application
+├── backend/ # Spring Boot Backend
+├── database/ # SQL Scripts
 ├── README.md
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
 cd REPO_NAME
 2️⃣ Backend Setup
@@ -83,32 +121,48 @@ cd backend
 cd frontend
 npm install
 npm start
-👨‍💻 Team Members
-Rohit Maddheshiya – Backend Development & System Design
-Ritik Gupta – Frontend Design & Research
-Shailendra Singh – Testing & Support
-Pradyumna Sahu – Documentation
+## 📸 Screenshots
+
+### 📊 Admin Dashboard
+![Dashboard](screenshots/dashboard.png)<img width="1917" height="959" alt="Screenshot 2026-04-26 225334" src="https://github.com/user-attachments/assets/3136da14-e42e-4957-94e7-e5e725f01888" />
+
+
+---
+### 🪑Fleet Inventory
+![Fleet Inventory](screenshots/seat-booking.png)<img width="1905" height="952" alt="Screenshot 2026-04-26 225448" src="https://github.com/user-attachments/assets/cf02907e-1bf6-4ecf-b880-0adbc36b6296" />
+
+
+---
+
+
+### 📍 Live Tracking
+![Tracking](screenshots/tracking.png)<img width="1909" height="956" alt="Screenshot 2026-04-26 225730" src="https://github.com/user-attachments/assets/e2076dd2-6774-49ac-8a35-5b7a508a9415" />
+
+
+---
+
+### User Dashboard
+![User](screenshots/ticket.png)<img width="1919" height="962" alt="Screenshot 2026-04-26 225904" src="https://github.com/user-attachments/assets/ed46c376-5f90-4926-99b9-1a0b37cdbfb6" />
+
+
 🎯 Project Objective
 
-The main objective of JanSafar is to modernize public transport systems by:
+The objective of JanSafar is to:
 
-Automating manual processes
-Improving passenger experience
-Enhancing operational efficiency
-Providing real-time visibility
+Automate manual transport processes
+Improve passenger experience
+Enhance operational efficiency
+Provide real-time tracking and transparency
 🔮 Future Enhancements
 AI-based route optimization
-Demand-based dynamic scheduling
-Mobile App Integration
-Predictive analytics for delays
-Smart ticketing using NFC
-📌 Conclusion
+Dynamic scheduling
+Mobile application
+Predictive delay analysis
+Smart NFC-based ticketing
+📄 License
 
-JanSafar is a complete smart transport solution that bridges the gap between passengers and transport authorities. By integrating real-time technologies with user-friendly design, it delivers a modern, efficient, and scalable system for public transportation.
+This project is licensed under the MIT License.
 
 ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub!
-## 📄 License
-
-This project is licensed under the MIT License.
+If you like this project, give it a ⭐ on GitHub!
