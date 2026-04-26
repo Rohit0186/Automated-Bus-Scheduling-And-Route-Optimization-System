@@ -108,19 +108,19 @@ JanSafar/
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/Rohit0186/Automated-Bus-Scheduling-And-Route-Optimization-System.git
-cd Automated-Bus-Scheduling-And-Route-Optimization-System
+- git clone https://github.com/Rohit0186/Automated-Bus-Scheduling-And-Route-Optimization-System.git
+- cd Automated-Bus-Scheduling-And-Route-Optimization-System
 
 2️⃣ Backend Setup
-cd backend
-Open in IDE (Eclipse/IntelliJ)
-Configure MySQL database
-Run Spring Boot application
+- cd backend
+- Open in IDE (Eclipse/IntelliJ)
+- Configure MySQL database
+- Run Spring Boot application
 
 3️⃣ Frontend Setup
-cd frontend
-npm install
-npm start
+- cd frontend
+- npm install
+- npm start
 
 🎯 Project Objective
 
@@ -130,12 +130,16 @@ Automate manual transport processes
 Improve passenger experience
 Enhance operational efficiency
 Provide real-time tracking and transparency
+
+
 🔮 Future Enhancements
 AI-based route optimization
 Dynamic scheduling
 Mobile application
 Predictive delay analysis
 Smart NFC-based ticketing
+
+
 📄 License
 
 This project is licensed under the MIT License.
