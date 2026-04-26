@@ -108,13 +108,15 @@ JanSafar/
 
 ### 1️⃣ Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/REPO_NAME.git
-cd REPO_NAME
+git clone https://github.com/Rohit0186/Automated-Bus-Scheduling-And-Route-Optimization-System.git
+cd Automated-Bus-Scheduling-And-Route-Optimization-System
+
 2️⃣ Backend Setup
 cd backend
-# Open in IDE (Eclipse/IntelliJ)
-# Configure MySQL database
-# Run Spring Boot application
+Open in IDE (Eclipse/IntelliJ)
+Configure MySQL database
+Run Spring Boot application
+
 3️⃣ Frontend Setup
 cd frontend
 npm install
