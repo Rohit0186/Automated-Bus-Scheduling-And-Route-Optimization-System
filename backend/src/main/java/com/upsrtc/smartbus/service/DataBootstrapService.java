@@ -163,34 +163,51 @@ public class DataBootstrapService {
         System.out.println(">>> Total Users in DB: " + userRepository.count());
     }
 
-    private void initPersonnel() {
-        if (driverRepository.count() == 0) {
-            User dUser = userRepository.findByUsername("driver").orElseGet(() -> {
+private void initPersonnel() {
+
+    if (driverRepository.count() == 0) {
+
+        User dUser = userRepository.findByUsername("driver")
+            .orElseGet(() -> {
                 User u = new User();
                 u.setUsername("driver");
                 u.setPassword(passwordEncoder.encode("driver123"));
                 u.setFullName("Ramesh Kumar (Expert)");
+                u.setEmail("driver@jansafar.com"); // FIX
                 u.setRole(User.Role.DRIVER);
+
                 return userRepository.save(u);
             });
-            Driver d = new Driver();
-            d.setUser(dUser);
-            d.setLicenseNumber("UP32-DL-2024-001");
-            d.setPhone("9876543210");
-            defaultDriver = driverRepository.save(d);
-        } else {
-            defaultDriver = driverRepository.findAll().get(0);
+
+        // Also handles an existing driver account with missing email
+        if (dUser.getEmail() == null || dUser.getEmail().isBlank()) {
+            dUser.setEmail("driver@jansafar.com");
+            userRepository.save(dUser);
         }
 
-        if (conductorRepository.count() == 0) {
-            Conductor c = new Conductor();
-            c.setName("Suresh Singh (Smart Conductor)");
-            c.setPhone("9988776655");
-            defaultConductor = conductorRepository.save(c);
-        } else {
-            defaultConductor = conductorRepository.findAll().get(0);
-        }
+        defaultDriver = new Driver();
+        defaultDriver.setUser(dUser);
+        defaultDriver.setLicenseNumber("UP32-DL-2024-001");
+        defaultDriver.setPhone("9876543210");
+
+        defaultDriver = driverRepository.save(defaultDriver);
+
+    } else {
+        defaultDriver = driverRepository.findAll().get(0);
     }
+
+    if (conductorRepository.count() == 0) {
+
+        Conductor c = new Conductor();
+        c.setName("Suresh Singh (Smart Conductor)");
+        c.setPhone("9988776655");
+
+        defaultConductor = conductorRepository.save(c);
+
+    } else {
+        defaultConductor = conductorRepository.findAll().get(0);
+    }
+}
 
     private void ensureAdminUser() {
         Optional<User> adminOpt = userRepository.findByUsername("admin");
